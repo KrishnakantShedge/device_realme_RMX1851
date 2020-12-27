@@ -9,12 +9,16 @@ endif
 
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
-   ro.config.vc_call_vol_steps=7 \
-   ro.config.media_vol_steps=25
+   ro.bluetooth.a2dp_offload.supported=false \
+   persist.bluetooth.a2dp_offload.disabled=true \
+   persist.bluetooth.bluetooth_audio_hal.disabled=true \
+   vendor.audio.feature.a2dp_offload.enable=false \
+   persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+   persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-   vendor.bluetooth.soc=cherokee
+   ro.bluetooth.library_name=libbluetooth.so
 
 # Blurs
 PRODUCT_PRODUCT_PROPERTIES += \

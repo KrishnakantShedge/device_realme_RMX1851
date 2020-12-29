@@ -155,6 +155,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# RealmeHub
+PRODUCT_PACKAGES += \
+     RealmeHub \
+     RealmeDoze
+
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt

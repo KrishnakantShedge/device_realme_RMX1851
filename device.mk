@@ -168,3 +168,7 @@ PRODUCT_PACKAGES += \
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    android.hardware.drm@1.3
